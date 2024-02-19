@@ -5,41 +5,185 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
+
+    <!--Google fonts (Poppins Family & Marcellus)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body
+        {
+            background-color: #ededec;
+        }
+
+        header
+        {
+            background-color:#474948;
+            color:#ededec;
+            text-align: center;
+            height: 50px;
+            margin-top: -20px;
+        }
+
+        #head-text
+        {
+            padding-top: 10px;
+            font-family: "Marcellus", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+        }
+
+        main
+        {
+            width: 1000px;
+            margin: auto;
+            display: flex;
+            gap: 20px;
+        }
+        img
+        {
+            width: 450px;
+        }
+
+        h1
+        {
+            font-family: "Marcellus", serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 50px;
+            text-align: center;
+            color: #474948;
+        }
+
+        .price
+        {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 25px;
+            color: #474948;
+            text-align: center;
+        }
+
+        .sub-title
+        {
+            font-family: "Marcellus", serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 20px;
+            color: #474948;
+
+        }
+
+        .description-text
+        {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 15px;
+            text-align: justify;
+            color: #a0a0a0;
+        }
+
+        .deco-title
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            border-top: 1px solid #474948;
+            border-bottom: 1px solid #474948;
+        }
+
+        a
+        {
+            text-decoration: none;
+            color: #ededec;
+        }
+
+        #a-deco
+        {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #474948;
+            border-radius: 10px;
+            text-align: center;
+            font-family: "Marcellus", serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 20px;
+        }
+
+        footer
+        {
+            background-color:#474948;
+            color:#ededec;
+            text-align: center;
+            height: 50px;
+            margin-bottom: -20px;
+        }
+
+        #foot-text
+        {
+            padding-top: 10px;
+            font-family: "Marcellus", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+        }
+
+
+    </style>
 </head>
 <body>
 
     <header>
-        <P>Fashion Hub</P>
+        <P id="head-text">Fashion Hub</P>
     </header>
 
     <main>
         <div>
-            <img src=""/>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEick_e4_QKuuv4zkaJQ1TUw8QEgzrgEX2JvUpXfqeVMzEaNGBdRWJd3KXfHBGhK5zZEfk9g5kI24Z7zbsRD0w41HOu-QbfmH922zXNA-TnSNFmgKWeQgXAm2Cko5-pc1pQAWs5sqprW1LYulFcsgjyJsQ7hsp_heDMqP1sF3SeX90Pbhd8lCCFBy2ogEp8/s16000/Asset%202-8.png"/>
         </div>
 
         <div>
 
             <h1>Haute couture</h1>
 
-            <p>$129.00</p>
+            <p class="price">$129.00</p>
 
             <div>
-                <p>Description</p>
-                <p>
-
+                <div class="deco-title">
+                    <p class="sub-title">Description</p>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+    
+                <p class="description-text">
+                    Introducing our latest haute couture creation: the Pure Elegance Gown. This stunning one-piece gown is crafted from luxurious white satin, giving it a timeless and graceful look.
+                </p>
+                <p class="description-text">
+                    Designed to make you feel like a queen, the Pure Elegance Gown has a flattering sweetheart neckline and a flowing silhouette that drapes beautifully. Each stitch is carefully done to ensure a perfect fit, tailored just for you. Elevate your special occasion with this exquisite gown, where luxury meets simplicity in a style that will make you shine.
                 </p>
             </div>
 
-            <div>
-                <p>Features</p>
+            <div class="deco-title">
+                <p class="sub-title">Features</p>
+                <i class="bi bi-chevron-right"></i>
             </div>
             
-            <div>
-                <p>More Information</p>
+            <div class="deco-title">
+                <p class="sub-title">More Information</p>
+                <i class="bi bi-chevron-right"></i>
             </div>
 
-            <div>
-                <p>Add to Cart</p>
+            <div id="a-deco">
+                <a href="#" target="_blank">Add to Cart</a>
             </div>
 
         </div>
@@ -47,7 +191,7 @@
     </main>
 
     <footer>
-        <p> © Fashion Hub!</p>
+        <p id="foot-text"> © Fashion Hub!</p>
     </footer>
 
 </body>
