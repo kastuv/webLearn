@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Numans&display=swap" rel="stylesheet">
+    <title>Music</title>
+    <style>
+        body
+        {
+            width: 500px;
+            margin: auto;
+            background-color: #222222;
+        }
+
+        p
+        {
+            font-family: "Numans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 15px;
+            color: greenyellow;
+            padding: 0px;
+            margin-top: -5px;
+
+        }
+
+        h1
+        {
+            font-family: "Numans", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            font-size: 50px;
+            color: greenyellow;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+
+        a
+        {
+            font-family: "Numans", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            font-size: 12px;
+            color: blueviolet;
+            text-decoration: none;
+        }
+
+        img
+        {
+            height: 100px;
+            width: 100px;
+            border-radius: 5px;
+            border: 1px solid greenyellow;
+        }
+
+        #playlist
+        {
+            font-family: "Numans", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 20px;
+            color: blueviolet;
+            text-decoration: none;
+            padding-bottom:50px;
+            margin-bottom: 50px;
+
+        }
+
+        #rowLayout
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 10px;  
+            margin-bottom: 10px;
+            margin-right: 10px;
+            margin-left: 10px;    
+        }
+
+        #rowLayout1
+        {
+            display: flex;
+            flex-direction: row;
+            margin-top: 15px;
+            justify-content: space-between;
+            width: 270px;
+            
+        }
+        .columnLayout
+        {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        #border
+        {
+            border: 1px solid blueviolet;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-top: 50px;
+             
+        }
+        #song
+        {
+            font-family: "Numans", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            font-size: 27px;
+            color: greenyellow;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Music</h1>
+
+    <a id="playlist" href="/playlist">Your playlist</a>
+    <div id="border">
+        <div id="rowLayout">
+            <img src="https://ia800203.us.archive.org/29/items/mbid-f2ff3f9b-d295-313f-b38c-990b4fcb260e/mbid-f2ff3f9b-d295-313f-b38c-990b4fcb260e-2389681103.jpg"/>
+            <div class="columnLayout">
+                <p id="song">Shake it off</p>
+                <p>Artist: Taylor Swift</p>
+                <div id="rowLayout1">
+                    <a href="">Add to Playlist </a>
+                    <p> | </p>
+                    <a href="">More song by this Artist</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
